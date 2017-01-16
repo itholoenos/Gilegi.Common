@@ -6,7 +6,7 @@ namespace Gilegi.Common.Utilities.Configuration
     {
         private readonly string _sectionName;
 
-        protected VirtualSection(string name)
+        public VirtualSection(string name)
         {
             _sectionName = name;
         }
