@@ -1,5 +1,4 @@
 ﻿using System.Configuration;
-using System.Diagnostics;
 
 namespace Gilegi.Common.Utilities.Configuration
 {
@@ -7,7 +6,7 @@ namespace Gilegi.Common.Utilities.Configuration
     {
         private readonly string _sectionName;
 
-        public VirtualSection(string name)
+        protected VirtualSection(string name)
         {
             _sectionName = name;
         }
@@ -24,10 +23,6 @@ namespace Gilegi.Common.Utilities.Configuration
             if (!allowNull && value == null)
             {
                 var error = $"Could not find a configuration value for key '{key}'. Please make sure you have this app setting in your .config file";
-
-                //show message in debug
-                Debug.Fail(error);
-
                 throw new ConfigurationErrorsException(error);
             }
 
@@ -35,10 +30,6 @@ namespace Gilegi.Common.Utilities.Configuration
             if (!allowEmpty && string.IsNullOrEmpty(value))
             {
                 var error = $"Retrieved value for '{key}' is EMPTY. Please type a value for this key in your .config file";
-
-                //show message in debug
-                Debug.Fail(error);
-
                 throw new ConfigurationErrorsException(error);
             }
 
