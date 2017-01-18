@@ -1,8 +1,11 @@
 ﻿using System.Configuration;
 
-namespace Gilegi.Common.Utilities.Configuration
+namespace Gilegi.Common.Utilities
 {
-    public static class AppSettings
+    /// <summary>
+    /// helps you retrieve application settings from ConfigurationManager.AppSettings in web.config or app.config
+    /// </summary>
+    public static class ApplicationSettings
     {
         /// <summary>
         /// returns an application setting by key. set params if you want to throw exceptions when null or empty
