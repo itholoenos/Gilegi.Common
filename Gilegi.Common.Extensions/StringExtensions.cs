@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace Gilegi.Common.Extensions
@@ -154,6 +156,17 @@ namespace Gilegi.Common.Extensions
         public static string ReplaceSpacesWithDashes(this string value)
         {
             return value.Replace(" ", "-");
+        }
+
+        /// <summary>
+        /// returns the first or default item that starts with the given value
+        /// </summary>
+        /// <param name="list"></param>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public static string FirstOrDefault(this IEnumerable<string> list, string value)
+        {
+            return list.FirstOrDefault(i => i.StartsWith(value));
         }
     }
 }
