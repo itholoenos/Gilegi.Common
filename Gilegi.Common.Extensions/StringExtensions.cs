@@ -35,16 +35,6 @@ namespace Gilegi.Common.Extensions
         }
 
         /// <summary>
-        /// equal to !string.IsNullOrEmpty. it just helps with readability and code writing flow
-        /// </summary>
-        /// <param name="value"></param>
-        /// <returns></returns>
-        public static bool IsNotNullOrEmpty(this string value)
-        {
-            return !string.IsNullOrEmpty(value);
-        }
-
-        /// <summary>
         /// the same as string.IsNullOrWhiteSpace. it just helps with readability and code writing flow
         /// </summary>
         /// <param name="value"></param>
@@ -52,16 +42,6 @@ namespace Gilegi.Common.Extensions
         public static bool IsNullOrWhiteSpace(this string value)
         {
             return string.IsNullOrWhiteSpace(value);
-        }
-
-        /// <summary>
-        /// equal to !string.IsNullOrWhiteSpace. it just helps with readability and code writing flow
-        /// </summary>
-        /// <param name="value"></param>
-        /// <returns></returns>
-        public static bool IsNotNullOrWhiteSpace(this string value)
-        {
-            return !string.IsNullOrWhiteSpace(value);
         }
 
         /// <summary>
