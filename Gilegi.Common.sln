@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gilegi.Common.Extensions", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gilegi.Common.Utilities", "Gilegi.Common.Utilities\Gilegi.Common.Utilities.csproj", "{5333C42D-F795-4898-879C-C29C8EC0003A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gilegi.Common.Extensions.Tests", "Gilegi.Common.Extensions.Tests\Gilegi.Common.Extensions.Tests.csproj", "{149B168E-1040-47FD-8E0D-0B82A31EF79A}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{5333C42D-F795-4898-879C-C29C8EC0003A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5333C42D-F795-4898-879C-C29C8EC0003A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5333C42D-F795-4898-879C-C29C8EC0003A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{149B168E-1040-47FD-8E0D-0B82A31EF79A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{149B168E-1040-47FD-8E0D-0B82A31EF79A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{149B168E-1040-47FD-8E0D-0B82A31EF79A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{149B168E-1040-47FD-8E0D-0B82A31EF79A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
