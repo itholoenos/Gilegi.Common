@@ -86,6 +86,11 @@ namespace Gilegi.Common.Extensions
             return AlphanumericRegex.Replace(value, string.Empty);
         }
 
+        public static string ReplaceIgnoreCase(this string input, string pattern, string replacement)
+        {
+            return Regex.Replace(input, pattern, replacement, RegexOptions.IgnoreCase);
+        }
+
         /// <summary>
         /// replaces the valueToRemove with empty string
         /// </summary>
