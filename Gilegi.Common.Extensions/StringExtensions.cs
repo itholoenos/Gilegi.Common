@@ -25,26 +25,6 @@ namespace Gilegi.Common.Extensions
         }
 
         /// <summary>
-        /// equal to string.IsNullOrEmpty. it just helps with readability and code writing flow
-        /// </summary>
-        /// <param name="value"></param>
-        /// <returns></returns>
-        public static bool IsNullOrEmpty(this string value)
-        {
-            return string.IsNullOrEmpty(value);
-        }
-
-        /// <summary>
-        /// the same as string.IsNullOrWhiteSpace. it just helps with readability and code writing flow
-        /// </summary>
-        /// <param name="value"></param>
-        /// <returns></returns>
-        public static bool IsNullOrWhiteSpace(this string value)
-        {
-            return string.IsNullOrWhiteSpace(value);
-        }
-
-        /// <summary>
         /// returns the last X chars of a string
         /// </summary>
         /// <param name="input"></param>
